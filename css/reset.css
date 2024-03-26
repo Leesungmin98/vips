@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+th,
+tr {
+    padding: 5px;
+}
+
+input,
+select,
+textarea,
+img {
+    vertical-align: middle;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+strong {
+    display: block;
+}
+address {
+    font-weight: normal;
+}
+
+header,
+nav,
+main,
+article,
+section,
+aside,
+footer {
+    display: block;
+}
+
+
+
+
+

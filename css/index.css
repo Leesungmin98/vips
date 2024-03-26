@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+/* =====header===== */
+header {
+    position: relative;
+    width: 100%; height: 960px;
+    background: url(../image/빕스\ 메인\ 사진.png) no-repeat center top;
+}
+nav {
+    width: 100%; height: 130px;
+    opacity: 50%;
+    background-color: black;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; height: 130px;
+    /* background-color: aqua; */
+}
+
+.menu-box > .logo-box {
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-box > .gnb {
+    display: flex;
+    width: 812px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.menu-box > .gnb a {
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 44px;
+
+    color: white;
+    /* background-color: aqua; */
+}
+
