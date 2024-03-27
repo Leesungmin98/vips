@@ -6,6 +6,18 @@
     margin: auto;
     padding: 0 10px;
 }
+@font-face { 
+    font-family: 'NotoSansKR-Regular'; /* 폰트 명 */
+    font-style: normal; /* 폰트 스타일 설정 */
+    font-weight: 100; /* 폰트 두께 */ 
+    src: url(../font/NotoSansKR-Regular.eot); /* IE9 미만 */
+    src: local(NotoSansKR-Regular-alt), /* 웹 브라우저가 지원하지 않는 불필요한 웹 폰트 호출을 막는데 사용 */
+    url(../font/NotoSansKR-Regular.eot) format('embedded-opentype'), /* IE6-IE8 */
+    url(../font/NotoSansKR-Regular.woff2) format('woff2'), /* WOFF의 차기 포맷 */
+    url(../font/NotoSansKR-Regular.woff) format('woff'), /* 표준 브라우저 */
+    url(../font/NotoSansKR-Regular.ttf) format('truetype'), /* Safari, Android, iOS */
+    url(../font/NotoSansKR-Regular.svg) format('svg'); /* TTF에서도 커버가 안되는 기기들에 대한 대응 */
+    }
 
 /* =====header===== */
 header {
@@ -15,24 +27,21 @@ header {
 }
 nav {
     width: 100%; height: 130px;
-    opacity: 50%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5)
 }
-
+/* menu-box */
 .menu-box {
     display: flex;
     justify-content: space-between;
     width: 100%; height: 130px;
     /* background-color: aqua; */
 }
-
 .menu-box > .logo-box {
     display: flex;
-    width: 130px;
+    width: 135px;
     justify-content: space-between;
     align-items: center;
 }
-
 .menu-box > .gnb {
     display: flex;
     width: 812px;
@@ -40,13 +49,15 @@ nav {
     align-items: center;
     /* background-color: aqua; */
 }
-
 .menu-box > .gnb a {
-    font-size: 19px;
-    font-weight: bold;
+    font-size: 20px;
     padding-left: 44px;
-
     color: white;
     /* background-color: aqua; */
 }
+.menu-box > .gnb a:hover {
+    font-weight: bold;
+    color: #be2c37
+}
 
+/* ===== main ===== */
