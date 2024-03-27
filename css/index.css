@@ -61,3 +61,46 @@ nav {
 }
 
 /* ===== main ===== */
+.main-store-box {
+    display: flex;
+    width: 100%;
+}
+/* main-menu */
+.main-store-box > .main-menu {
+    position: relative;
+    width: 960px;
+    height: 960px;
+    text-align: center;
+    background-color: black;
+    z-index: 1;
+}
+.main-store-box > .main-menu > .main-menu-img {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 960px;
+    z-index: 2;
+}
+.main-store-box > .main-menu > .main-menu-text {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.main-store-box > .main-menu > .main-menu-text > h2 {
+    padding: 20px;
+    border-bottom: 2px solid white;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+.main-store-box > .main-menu > .main-menu-text > strong {
+    font-size: 20px;
+    padding: 20px;
+    line-height: 35px;
+    color: white;
+}
+.main-store-box > .main-menu > .main-menu-text > strong > .cook {
+    font-size: 24px;
+}
+
