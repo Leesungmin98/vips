@@ -23,7 +23,7 @@
 header {
     position: relative;
     width: 100%; height: 960px;
-    background: url(../image/빕스\ 메인\ 사진.png) no-repeat center top;
+    background: url(../images/main_picture.png) no-repeat center top;
 }
 nav {
     width: 100%; height: 130px;
@@ -67,40 +67,59 @@ nav {
 }
 /* main-menu */
 .main-store-box > .main-menu {
-    position: relative;
     width: 960px;
     height: 960px;
     text-align: center;
-    background-color: black;
-    z-index: 1;
+    background-image: url(../images/meat.png);
 }
-.main-store-box > .main-menu > .main-menu-img {
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 960px;
-    z-index: 2;
-}
-.main-store-box > .main-menu > .main-menu-text {
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-}
-
-.main-store-box > .main-menu > .main-menu-text > h2 {
-    padding: 20px;
-    border-bottom: 2px solid white;
-    font-size: 80px;
+.main-store-box > .main-menu > h2 {
+    padding-top: 330px;
+    padding-bottom: 41px;
+    font-size: 90px;
     font-weight: bold;
     color: white;
+    /* background-color: aqua; */
 }
-.main-store-box > .main-menu > .main-menu-text > strong {
+.main-store-box > .main-menu > strong {
+    width: 338px;
+    margin: auto;
+    padding-top: 39px;
+    border-top: 2px solid white;
     font-size: 20px;
-    padding: 20px;
-    line-height: 35px;
-    color: white;
+    color:white;
+    /* background-color: aquamarine; */
 }
-.main-store-box > .main-menu > .main-menu-text > strong > .cook {
-    font-size: 24px;
+.main-store-box > .main-menu > strong > .cook {
+    display: block;
+    padding-top: 15px;
+    font-size: 25px;
+    /* background-color: blue; */
 }
 
+/* store */
+.main-store-box > .store {
+    width: 960px;
+    height: 960px;
+    text-align: center;
+    background-image: url(../images/store.png);
+}
+.main-store-box > .store > h2 {
+    padding-top: 330px;
+    padding-bottom: 82px;
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    /* background-color: aqua; */
+}
+.main-store-box > .store > strong {
+    font-size: 20px;
+    color:white;
+    /* background-color: aquamarine; */
+}
+.main-store-box > .store > form > input {
+    width: 508px; height: 50px;
+    margin-top: 15px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: rgba(155, 152, 146, 0.4);
+}
