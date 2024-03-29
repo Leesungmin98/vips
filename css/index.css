@@ -123,3 +123,51 @@ nav {
     border-radius: 20px;
     background-color: rgba(155, 152, 146, 0.4);
 }
+
+/* salad-bar */
+
+.salad-bar {
+    width: 100%;
+    height: 1000px;
+    /* background-color: blueviolet; */
+}
+.salad-bar .salad-bar-box {
+    display: flex;
+    justify-content: space-between;
+    height: 1000px;
+    /* background-color: antiquewhite; */
+}
+
+.salad-bar .salad-bar-box > .salad-bar-text > h2 {
+    padding-top: 236px;
+    padding-bottom: 25px;
+    font-size: 70px;
+    font-weight: bold;
+    /* background-color: #c0c0c0; */
+}
+.salad-bar .salad-bar-box > .salad-bar-text .salad-bar-sub-title {
+    padding-bottom: 80px;
+    font-size: 14px;
+    color: #c0c0c0;
+    /* background-color: blue; */
+}
+.salad-bar .salad-bar-box > .salad-bar-text strong {
+    font-size: 23px;
+    padding-bottom: 35px;
+}
+.salad-bar .salad-bar-box > .salad-bar-text p {
+    padding-bottom: 58px;
+    font-weight: 540;
+}
+.salad-bar .salad-bar-box > .salad-bar-text .learn-more {
+    width: 164px; height: 41px;
+    line-height: 41px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* background-color: #be2c37; */
+}
+
+.salad-bar .slide img {
+    width: 280px; height: 420px;
+}
