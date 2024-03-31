@@ -5,6 +5,7 @@
     width: 1200px;
     margin: auto;
     padding: 0 10px;
+    /* background-color: blueviolet; */
 }
 @font-face { 
     font-family: 'NotoSansKR-Regular'; /* 폰트 명 */
@@ -170,4 +171,77 @@ nav {
 
 .salad-bar .slide img {
     width: 280px; height: 420px;
+}
+
+.salad-bar .salad-bar-box .slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.salad-bar .salad-bar-box .slide > .left {
+    padding-right: 82px;
+    /* background-color: #be2c37; */
+}
+.salad-bar .salad-bar-box .slide > .right {
+    padding-right: 20px;
+    /* background-color: aqua; */
+}
+.salad-bar .salad-bar-box .slide a img:hover {
+    width: 320px; height: 480px;
+    line-height: 480px;
+    /* background-color: blue; */
+}
+
+/* yum-delivery */
+
+.yum-delivery {
+    width: 1920px; height: 1000px;
+    /* background-color: crimson; */
+}
+.yum-delivery h2 {
+    padding-top: 150px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #0f542b;
+    /* background-color: navy; */
+}
+.yum-delivery .yum {
+    letter-spacing: 5px;
+    font-size: 100px;
+}
+.yum-delivery .yum-red {
+    color: #be2c37;
+}
+.yum-delivery .yum-delivery-title > p {
+    width: 650px;
+    margin: auto;
+    padding: 10px 0px 100px 0px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 18px;
+    /* background-color: aqua; */
+}
+.yum-delivery .yum-delivery-box {
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    margin: auto;
+    /* background-color: darkcyan; */
+}
+.yum-delivery .yum-delivery-box .yum-text {
+    text-align: center;
+}
+.yum-delivery .yum-delivery-box .yum-text > h3 {
+    font-weight: bold;
+    padding: 30px;
+    /* background-color: cyan; */
+}
+.yum-delivery .yum-delivery-box .yum-text p {
+    padding-bottom: 20px;
+    /* background-color: blue; */
+}
+.yum-delivery .yum-delivery-box .salad-pizza p {
+    padding-bottom: 40px;
 }
