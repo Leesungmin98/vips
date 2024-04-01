@@ -63,17 +63,30 @@ nav {
 
 /* ===== main ===== */
 .main-store-box {
+    position: relative;
     display: flex;
     width: 100%;
 }
 /* main-menu */
 .main-store-box > .main-menu {
+    position: relative;
     width: 960px;
     height: 960px;
     text-align: center;
     background-image: url(../images/meat.png);
 }
-.main-store-box > .main-menu > h2 {
+.main-store-box > .main-menu::after {
+    position: absolute; top: 0; left: 0;
+    content: "";
+    width: 100%; height: 100%;
+    background-color: rgba(000, 000, 000, 0.3);
+}
+.main-store-box > .main-menu > .main-menu-txt{
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.main-store-box > .main-menu > .main-menu-txt > a > h2 {
     padding-top: 330px;
     padding-bottom: 41px;
     font-size: 90px;
@@ -81,7 +94,10 @@ nav {
     color: white;
     /* background-color: aqua; */
 }
-.main-store-box > .main-menu > strong {
+.main-store-box > .main-menu > .main-menu-txt > a > h2:hover{
+    color: #be2c37;
+}
+.main-store-box > .main-menu > .main-menu-txt > a > strong {
     width: 338px;
     margin: auto;
     padding-top: 39px;
@@ -90,7 +106,10 @@ nav {
     color:white;
     /* background-color: aquamarine; */
 }
-.main-store-box > .main-menu > strong > .cook {
+.main-store-box > .main-menu > .main-menu-txt > a > strong:hover {
+    color: #be2c37;
+}
+.main-store-box > .main-menu > .main-menu-txt > strong > .cook {
     display: block;
     padding-top: 15px;
     font-size: 25px;
@@ -98,13 +117,25 @@ nav {
 }
 
 /* store */
-.main-store-box > .store {
+.main-store-box > .store-box {
+    position: relative;
     width: 960px;
     height: 960px;
     text-align: center;
     background-image: url(../images/store.png);
 }
-.main-store-box > .store > h2 {
+.main-store-box > .store-box::after {
+    position: absolute; top: 0; left: 0;
+    content: "";
+    width: 100%; height: 100%;
+    background-color: rgba(000, 000, 000, 0.3);
+}
+.main-store-box > .store-box > .store {
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.main-store-box > .store-box > .store > h2 {
     padding-top: 330px;
     padding-bottom: 82px;
     font-size: 90px;
@@ -112,19 +143,30 @@ nav {
     color: white;
     /* background-color: aqua; */
 }
-.main-store-box > .store > strong {
+.main-store-box > .store-box  > .store > strong {
     font-size: 20px;
     color:white;
     /* background-color: aquamarine; */
 }
-.main-store-box > .store > form > input {
+.main-store-box > .store-box  > .store > form > input {
     width: 508px; height: 50px;
     margin-top: 15px;
     border-style: none;
     border-radius: 20px;
     background-color: rgba(155, 152, 146, 0.4);
 }
+.main-store-box > .store-box  > .store > form > input:focus {
+    padding-left: 15px;
+    outline-style: none;
+}
 
+.main-store-box > .store-box  > .store > form > input::placeholder {
+    color: white;
+    padding-left: 430px;
+}
+.main-store-box > .store-box  > .store > form > input:focus::placeholder {
+    color: transparent;
+}
 /* salad-bar */
 
 .salad-bar {
@@ -138,7 +180,6 @@ nav {
     height: 1000px;
     /* background-color: antiquewhite; */
 }
-
 .salad-bar .salad-bar-box > .salad-bar-text > h2 {
     padding-top: 236px;
     padding-bottom: 25px;
@@ -168,7 +209,6 @@ nav {
     border-radius: 10px;
     /* background-color: #be2c37; */
 }
-
 .salad-bar .slide img {
     width: 280px; height: 420px;
 }
@@ -178,6 +218,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+}
+.salad-bar .salad-bar-box .slide li {
+    padding: 30px;
 }
 .salad-bar .salad-bar-box .slide > .left {
     padding-right: 82px;
@@ -190,13 +233,13 @@ nav {
 .salad-bar .salad-bar-box .slide a img:hover {
     width: 320px; height: 480px;
     line-height: 480px;
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 /* yum-delivery */
 
 .yum-delivery {
-    width: 1920px; height: 1000px;
+    width: 100%; height: 1000px;
     /* background-color: crimson; */
 }
 .yum-delivery h2 {
@@ -242,6 +285,64 @@ nav {
     padding-bottom: 20px;
     /* background-color: blue; */
 }
-.yum-delivery .yum-delivery-box .salad-pizza p {
+.yum-delivery .yum-delivery-box .salad-bar-pizza p {
     padding-bottom: 40px;
+}
+
+/* .cj-one-card */
+.cj-one-card {
+    width: 100%; height: 500px;
+    background-image: url(../images/cjone.png);
+
+}
+.cj-one-card .card-box {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 500px;
+    /* background-color: #be2c37 */
+}
+
+.cj-one-card .card-box > .card-txt-box {
+    position: relative;
+    width: 520px; height: 300px;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 15px;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2)
+}
+.cj-one-card .card-box > .card-txt-box > .card-txt {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 80%;
+    /* background-color: #be2c37; */
+}
+.cj-one-card .card-box > .card-txt-box > .card-txt > h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    /* background-color: #c0c0c0; */
+}
+.cj-one-card .card-box > .card-txt-box > .card-txt > p {
+    font-size: 15px;
+    padding-bottom: 35px;
+    color: white;
+    /* background-color: aquamarine; */
+}
+.cj-one-card .card-box > .card-txt-box > .card-txt > strong {
+    font-size: 15px;
+    color: white;
+    /* background-color: blueviolet; */
+}
+.cj-one-card .card-box > .card-txt-box > .card-txt .plus-bt a {
+    position: absolute; top: 43px; right: 45px;
+    width: 50px; height: 50px;
+    line-height: 40px;
+    padding-left: 7px;
+    font-size: 50px;
+    border-radius: 100px; 
+    color: black;
+    background-color: white;
 }
