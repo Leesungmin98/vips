@@ -109,12 +109,6 @@ nav.gnb-bg {
 .main-store-box > .main-menu > .main-menu-txt > a > strong:hover {
     color: #be2c37;
 }
-.main-store-box > .main-menu > .main-menu-txt > strong > .cook {
-    display: block;
-    padding-top: 15px;
-    font-size: 25px;
-    /* background-color: blue; */
-}
 
 /* store */
 .main-store-box > .store-box {
@@ -149,17 +143,22 @@ nav.gnb-bg {
     /* background-color: aquamarine; */
 }
 .main-store-box > .store-box  > .store > form > input {
+    position: relative;
     width: 508px; height: 50px;
     margin-top: 15px;
     border-style: none;
     border-radius: 20px;
     background-color: rgba(155, 152, 146, 0.4);
 }
+.main-store-box > .store-box  > .store > form > img {
+    position: absolute; top: 580px;
+    width: 50px; height: 50px;
+    /* background-color: aliceblue; */
+}
 .main-store-box > .store-box  > .store > form > input:focus {
-    padding-left: 15px;
+    padding-left: 55px;
     outline-style: none;
 }
-
 .main-store-box > .store-box  > .store > form > input::placeholder {
     color: white;
     padding-left: 430px;
