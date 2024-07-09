@@ -5,19 +5,19 @@
     width: 1200px;
     margin: auto;
     padding: 0 10px;
-    /* background-color: blueviolet; */
+   
 }
 @font-face { 
-    font-family: 'NotoSansKR-Regular'; /* 폰트 명 */
-    font-style: normal; /* 폰트 스타일 설정 */
-    font-weight: 100; /* 폰트 두께 */ 
-    src: url(../font/NotoSansKR-Regular.eot); /* IE9 미만 */
-    src: local(NotoSansKR-Regular-alt), /* 웹 브라우저가 지원하지 않는 불필요한 웹 폰트 호출을 막는데 사용 */
-    url(../font/NotoSansKR-Regular.eot) format('embedded-opentype'), /* IE6-IE8 */
-    url(../font/NotoSansKR-Regular.woff2) format('woff2'), /* WOFF의 차기 포맷 */
-    url(../font/NotoSansKR-Regular.woff) format('woff'), /* 표준 브라우저 */
-    url(../font/NotoSansKR-Regular.ttf) format('truetype'), /* Safari, Android, iOS */
-    url(../font/NotoSansKR-Regular.svg) format('svg'); /* TTF에서도 커버가 안되는 기기들에 대한 대응 */
+    font-family: 'NotoSansKR-Regular'; 
+    font-style: normal; 
+    font-weight: 100; 
+    src: url(../font/NotoSansKR-Regular.eot);
+    src: local(NotoSansKR-Regular-alt), 
+    url(../font/NotoSansKR-Regular.eot) format('embedded-opentype'), 
+    url(../font/NotoSansKR-Regular.woff2) format('woff2'), 
+    url(../font/NotoSansKR-Regular.woff) format('woff'), 
+    url(../font/NotoSansKR-Regular.ttf) format('truetype'), 
+    url(../font/NotoSansKR-Regular.svg) format('svg'); 
     }
 
 /* =====header===== */
@@ -26,37 +26,42 @@ header {
     width: 100%; height: 960px;
     background: url(../images/main_picture.png) no-repeat center top;
 }
-nav.gnb-bg {
+.menubox-logobox {
     width: 100%; height: 130px;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menubox-logobox-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: #be2c37; */
 }
 /* menu-box */
 .menu-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
+    align-items: center;
     width: 100%; height: 130px;
-    /* background-color: aqua; */
+    /* background-color: antiquewhite; */
 }
-.menu-box > .logo-box {
-    display: flex;
+.logo-box {
     width: 135px;
-    justify-content: space-between;
-    align-items: center;
+    /* background-color: #be2c37; */
 }
-.menu-box > .gnb {
+.gnb {
+    width: 100%; height: 100%;
+    padding-right: 10px;
     display: flex;
-    width: 812px;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     /* background-color: aqua; */
 }
-.menu-box > .gnb a {
+.gnb a {
     font-size: 20px;
     padding-left: 44px;
     color: white;
     /* background-color: aqua; */
 }
-.menu-box > .gnb a:hover {
+.gnb a:hover {
     font-weight: bold;
     color: #be2c37
 }
