@@ -186,23 +186,23 @@ header {
 }
 .salad-bar .salad-bar-box > .salad-bar-text > h2 {
     padding-top: 236px;
-    padding-bottom: 25px;
+    padding-bottom: 12px;
     font-size: 70px;
     font-weight: bold;
     /* background-color: #c0c0c0; */
 }
 .salad-bar .salad-bar-box > .salad-bar-text .salad-bar-sub-title {
-    padding-bottom: 80px;
+    padding-bottom: 56px;
     font-size: 14px;
-    color: #c0c0c0;
+    color: #767676;
     /* background-color: blue; */
 }
 .salad-bar .salad-bar-box > .salad-bar-text strong {
     font-size: 23px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
 }
 .salad-bar .salad-bar-box > .salad-bar-text p {
-    padding-bottom: 58px;
+    padding-bottom: 56px;
     font-weight: 500;
 }
 .salad-bar .salad-bar-box > .salad-bar-text .learn-more {
@@ -385,11 +385,11 @@ header {
 .cj-membership .cj-membership-box > li h3 {
     padding-top: 5px;
     font-size: 25px;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 .cj-membership .cj-membership-box > li p {
     font-size: 15px;
-    padding-top: 25px;
+    padding-top: 16px;
 }
 .cj-membership .cj-membership-box > li > div {
     position: absolute; top: 50%; left: 50%;
