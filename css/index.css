@@ -153,11 +153,11 @@ header {
     margin-top: 15px;
     border-style: none;
     border-radius: 20px;
-    background-color: rgba(155, 152, 146, 0.4);
+    background-color: rgba(155, 152, 146, 0.7);
 }
 .main-store-box > .store-box  > .store > form > img {
-    position: absolute; top: 580px;
-    width: 50px; height: 50px;
+    position: absolute; top: 592px; left:10px ;
+    width: 45px; height: 45px;
     /* background-color: aliceblue; */
 }
 .main-store-box > .store-box  > .store > form > input:focus {
@@ -165,7 +165,8 @@ header {
     outline-style: none;
 }
 .main-store-box > .store-box  > .store > form > input::placeholder {
-    color: white;
+    color: #ffffff;
+    font-size: 16px;
     padding-left: 430px;
 }
 .main-store-box > .store-box  > .store > form > input:focus::placeholder {
@@ -282,7 +283,8 @@ header {
 }
 .yum-delivery .yum-delivery-box .yum-text > h3 {
     font-weight: bold;
-    padding: 30px;
+    padding-top: 32px;
+    padding-bottom: 12px;
     /* background-color: cyan; */
 }
 .yum-delivery .yum-delivery-box .yum-text p {
@@ -314,7 +316,7 @@ header {
     border: 1px solid black;
     border-radius: 15px;
     border-style: none;
-    background-color: rgba(255, 255, 255, 0.2)
+    background-color: rgba(255, 255, 255, 0.5)
 }
 .cj-one-card .card-box > .card-txt-box > .card-txt {
     position: absolute; top: 50%; left: 50%;
@@ -326,22 +328,22 @@ header {
 .cj-one-card .card-box > .card-txt-box > .card-txt > h2 {
     font-size: 45px;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     /* background-color: #c0c0c0; */
 }
 .cj-one-card .card-box > .card-txt-box > .card-txt > p {
     font-size: 15px;
-    padding-bottom: 35px;
-    color: white;
+    padding-bottom: 12px;
+    color: rgb(0, 0, 0);
     /* background-color: aquamarine; */
 }
 .cj-one-card .card-box > .card-txt-box > .card-txt > strong {
     font-size: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
     /* background-color: blueviolet; */
 }
 .cj-one-card .card-box > .card-txt-box > .card-txt .plus-bt {
-    position: absolute; top: 43px; right: 45px;
+    position: absolute; top: 20px; right: 45px;
     width: 50px; height: 50px;
     line-height: 40px;
     padding-left: 7px;
@@ -392,7 +394,7 @@ header {
 }
 .cj-membership .cj-membership-box > li p {
     font-size: 15px;
-    padding-top: 16px;
+    padding-top: 12px;
 }
 .cj-membership .cj-membership-box > li > div {
     position: absolute; top: 50%; left: 50%;
