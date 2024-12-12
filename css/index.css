@@ -244,9 +244,20 @@ header {
     /* background-color: aqua; */
 }
 .salad-bar .salad-bar-box .slide a img:hover {
-    width: 320px; height: 480px;
-    line-height: 480px;
-    background-color: blue;
+    animation-name: salad;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes salad {
+    0% {
+        transform: scale(1);
+        
+    }
+    100% {
+        transform: scale(1.1);
+      
+    }
 }
 
 /* yum-delivery */
